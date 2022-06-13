@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Home</title>
+    
+    <style>
+        .preloader{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200vw;
+            height: 200vh;
+            background: #F9F9F9;
+            z-index: 2000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .75s;
+        }
+        .preloader.hide{
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.8);
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body >
+
+   <div class="wrapper">
+       <header class="header">
+           <div class="container">
+               <div class="header__row">
+                   <a class="header__left" href="">Galerie LANDA</a>
+       
+                   <nav class="header__nav close-nav">
+                       <div class="header__nav-close close-nav onMob">
+                           <img class="close-nav" src="assets/images/closeWhite.svg" alt="">
+                       </div>
+                       <ul>
+                           <li><a href="#">exhibitions</a></li>
+                           <li><a href="#">artists</a></li>
+                           <li><a href="#"> viewing room</a></li>
+                           <li><a href="#">media</a></li>
+                           <li><a href="#">our story</a></li>
+                           <li><a href="#">contact</a></li>
+                           <li><a href="#">search</a></li>
+       
+                           <li class="onMob"><a href="#">newsletter</a></li>
+                           <li class="onMob"><a href="#">instagram</a></li>
+                           <li class="onMob"><a href="#">Privacy Policy</a></li>
+                           <li class="onMob"><a href="#">created by otomweb</a></li>
+                           <li class="onMob">
+                               <ul class="lang ">
+                                   <li><a href="#">FR</a></li>
+                                   <li class="active"><a href="#">EN</a></li>
+                               </ul>
+                           </li>
+                       </ul>
+                   </nav>
+       
+                   <ul class="lang onDesc">
+                       <li><a href="#">FR</a></li>
+                       <li class="active"><a href="#">EN</a></li>
+                   </ul>
+       
+                   <div class="burger onMob">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                   </div>
+               </div>
+           </div>
+       </header>
+
+       <main >
+           
+           <section class="section-offset artists" style="--marginDesc: 44px 0">
+               <div class="container">
+                   <div class="swiper artists__swiper">
+                       <div class="swiper-wrapper">
+                           <div class="swiper-slide artists__it">
+                               <div class="mainBox">
+                                   <div class="mainBox__l artists__l">
+                                       <img src="assets/images/img1.jpg" alt="">
+                                   </div>
+                                   <div class="mainBox__r ">
+                                       <div class="artists__txt">
+                                           <div>
+                                               Bottoni metronomo, 1967
+                                               mixed media
+                                           </div>
+                                           <div>Mother-of-pearl buttons and nails on paper laid down on chipboard, metronome with feather</div>
+                                           <div>
+                                               167 x 234 x 15 cm<br>
+                                               (65.75 x 92.13 x 5.91 in.)<br>
+                                               (Inv n°PC78)<br>
+                                           </div>
+                                           <a href="#" class="btn btn-black content open-inquire">inquire</a>
+                                       </div>
+                                       <form class="artists__form form inquire-form">
+                                           <div class="form__close">
+                                               <img src="assets/images/close.png" alt="">
+                                           </div>
+                                           <div class="form__title">inquire form</div>
+                                           <div class="inputBox">
+                                               <label>Name:</label>
+                                               <input type="text">
+                                           </div>
+                                           <div class="inputBox">
+                                               <label>Tel:</label>
+                                               <input type="phone">
+                                           </div>
+                                           <div class="inputBox">
+                                               <label>E-mail:</label>
+                                               <input type="email">
+                                           </div>
+                                           <button class="btn btn-black content">Send</button>
+                                       </form>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="swiper-slide artists__it">
+                               <div class="mainBox">
+                                   <div class="mainBox__l artists__l">
+                                       <img src="assets/images/imgMain.jpg" alt="">
+                                   </div>
+           
+                                   <div class="mainBox__r ">
+                                       <div class="artists__txt">
+                                           <div>
+                                               Lorem ipsum dolor sit amet.
+                                           </div>
+                                           <div>
+                                               Lorem ipsum dolor sit amet.
+                                               Lorem ipsum dolor sit amet.
+                                               Lorem ipsum dolor sit amet.
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+           
+                       </div>
+                   </div>
+           
+                   <div class="artists__slider-btns">
+                       <div class="artists__swiper-prev">
+                           <span>←</span>previous
+                       </div>
+                       <div class="artists__swiper-close">
+                           close
+                       </div>
+                       <div class="artists__swiper-next">
+                           next<span>→</span>
+                       </div>
+                   </div>
+               </div>
+           </section>
+           
+           
+           
+       </main>
+
+   </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
